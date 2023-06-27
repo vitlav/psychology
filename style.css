@@ -1,0 +1,145 @@
+:root {
+    --text-main-color: #29493E;
+    --text-sub-color: #D9C697;
+    --shadow-color: #F9F7F1;
+    --text-main-size: 0.92vw;
+    --text-head-size: 2vw;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: var(--text-main-color);
+}
+
+.touchable {
+    cursor: pointer;
+}
+
+.nottouchable {
+    pointer-events: none;
+    cursor: pointer;
+}
+
+.notselectable {
+    -webkit-user-select: none;
+}
+
+html, body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0 0 5vw 0;
+    min-height: 100vh;
+    background: url("images/texture.jpg");
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: var(--text-head-size)
+}
+
+.container {
+    position: relative;
+    width: 62.5vw;
+}
+
+header {
+    width: 100%;
+    height: 13.5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7vw;
+}
+
+.header__logo {
+    font-size: 1.5vw;
+}
+
+.header__links {
+    width: 17.5vw;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__links a {
+    text-transform: uppercase;
+}
+
+.header__phone {
+
+}
+
+.header__social {
+    width: 3.85vw;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.header__social img {
+    width: 1.28vw;
+    height: 1.28vw;
+}
+
+.main {
+    box-sizing: border-box;
+    position: relative;
+    padding: 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15vw;
+}
+
+.main img {
+    border-radius: 100vw;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    width: 17.5vw;
+    height: 17.5vw;
+}
+
+.main hr {
+    height: 12vw;
+    opacity: 0.6;
+    border-color: var(--text-main-color);
+}
+
+.main p {
+    font-size: var(--text-main-size);
+}
+
+.about__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3vw;
+}
+
+.about__header hr {
+    border: 1px solid var(--text-sub-color);
+    margin-top: 0.2vw;
+    width: 15vw;
+}
+
+.about {
+    min-height: 20vw;
+    box-shadow: 0 0.25em 1.875em 0 rgba(217,198,151,.25);
+}
