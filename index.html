@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="extentions.js"></script>
 </head>
 
 <body>
@@ -18,9 +19,9 @@
         <header>
             <a class="header__logo notselectable" href="#">«Мельникова Наталья»</a>
             <div class="header__links">
-                <a class="notselectable" href="#">Обо Мне<hr /></a>
-                <a class="notselectable" href="#">Услуги<hr /></a>
-                <a class="notselectable" href="#">Контакты<hr /></a>
+                <a class="notselectable touchable" onclick="SmoothScroll('about');">Обо Мне<hr /></a>
+                <a class="notselectable touchable" onclick="SmoothScroll('services', 'none', 50);">Услуги<hr /></a>
+                <a class="notselectable touchable" onclick="SmoothScroll('about');">Контакты<hr /></a>
             </div>
             <a class="header__phone" href="tel:+79251350866">+7 (925) 135-08-66</a>
             <div class="header__social">
@@ -42,22 +43,108 @@
         <div class="addition">
             <div class="addition__upleft"></div>
             <p>
-                Каждый человек индивидуален и обладает огромным внутренним миром, это целая Вселенная,<br />
+                Каждый человек индивидуален и обладает огромным внутренним миром, это целая Вселенная,
                 с которой важно найти контакт и научиться любить и заботиться о ней.<br />
-                Я рада помочь вам совместно найти ответы на волнующие вас вопросы и преобразовать то, что вызывает дискомфорт в жизни.<br />
+                Я рада помочь вам совместно найти ответы на волнующие вас вопросы и преобразовать то,
+                что вызывает дискомфорт в жизни.<br />
                 Думаю, что главная ценность моей работы - это увидеть осознанный взгляд в конце терапии.<br />
                 Когда человек полностью осознает, чувствует себя и четко понимает в каком заданном векторе ему идти дальше.<br />
                 Важно понять, что жизнь достойна того, чтобы её проживать.
             </p>
             <div class="addition__downright"></div>
         </div>
-        <div class="about__header">
+
+        <div id="about" class="content__header">
             <h2>Обо мне</h2>
             <hr>
         </div>
 
-        <div class="about">
+        <div class="content">
+            <div class="about__education">
+                <h3>Образование</h3>
+                <ul>
+                    <li>Клинический психолог, «Московский городской психолого-педагогический университет», 2016-2021</li>
+                    <li>Возрастной кризис у ребенка, как определить и преодолеть, ГАУ «Институт дополнительного профессионального образования» ДТСЗН, 2022</li>
+                    <li>Использование экспресс-методов в психологическом консультировании граждан, оказавшихся в трудной жизненной ситуации, ГБУ «Кризисный центр помощи женщинам и детям», 2022</li>
+                    <li>Самоповреждающее и суицидальное поведение у подростков, ГБУ Центр «Содействие», 2022</li>
+                    <li>Эффективные психологические техники в работе с пострадавшими от насилия в семье, ГБУ «Кризисный центр помощи женщинам и детям», 2023</li>
+                    <li>Сексология в психологическом консультировании, АНО ДПО «Национальный исследовательский институт дополнительного образования и профессионального обучения», 2023</li>
+                    <li>Когнитивно-поведенческая терапия как метод психокоррекционного воздействия при аддиктивном и суицидальном поведении, тревожно-депрессивных расстройствах, АНО ДПО «Национальный исследовательский институт дополнительного образования и профессионального обучения», 2023</li>
+                    <li>Когнитивно-поведенческий терапевт, «Институт психотерапии и клинической психологии», 554 ч, 2023</li>
+                </ul>
+            </div>
+            <div class="about__advantage">
+                <h3>Мои преимущества</h3>
+                <hr />
+                <div class="advantage__grid">
+                    <div class="advantage__item">
+                        <div class="item__image"></div>
+                        <p>Продолжительность 55 минут</p>
+                    </div>
+                    <div class="advantage__item">
+                        <div class="item__image"></div>
+                        <p>Удобное для вас время</p>
+                    </div>
+                    <div class="advantage__item">
+                        <div class="item__image"></div>
+                        <p>Часов психологических консультаций</p>
+                    </div>
+                    <div class="advantage__item">
+                        <div class="item__image"></div>
+                        <p>Онлайн по всему миру</p>
+                    </div>
+                    <div class="advantage__item">
+                        <div class="item__image"></div>
+                        <p>Конфиденциальность</p>
+                    </div>
+                    <div class="advantage__item">
+                        <div class="item__image"></div>
+                        <p>Кабинет в центре Москвы</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div id="services" class="content__header">
+            <h2>Услуги</h2>
+            <hr>
+        </div>
+
+        <div class="content">
+            <div class="services__grid">
+                <div class="services__item">
+                    <div class="item__image"></div>
+                    <h4>Помощь подросткам</h4>
+                    <p>
+                        Семьи, в которых есть дети подросткового возраста,
+                        в большей или меньшей степени
+                        сталкиваются с одними и теми же проблемами и порой
+                        ситуация выходит из-под контроля.
+                    </p>
+                    <div class="services__button touchable"><a class="notselectable">Подробнее</a></div>
+                </div>
+                <div class="services__item">
+                    <div class="item__image"></div>
+                    <h4>Индивидуальное консультирование и психотерапия</h4>
+                    <p>
+                        Это анализ и решение вашей проблемы, поддержка в сложной
+                        жизненной ситуации. В зависимости от запроса, это могут быть
+                        однократные консультации или длительная терапия.
+                    </p>
+                    <div class="services__button touchable"><a class="notselectable">Подробнее</a></div>
+                </div>
+                <div class="services__item">
+                    <div class="item__image"></div>
+                    <h4>Тестирование и психодиагностика</h4>
+                    <p>
+                        Если вас что-то смущает в поведении ребёнка
+                        или вам кажется, что с вами<br/>что-то не так - комплексная
+                        психодиагностика и консультация специалиста помогут вам
+                        понять и решить проблему.
+                    </p>
+                    <div class="services__button touchable"><a class="notselectable">Подробнее</a></div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
