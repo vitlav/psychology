@@ -21,7 +21,7 @@
             <div class="header__links">
                 <a class="notselectable touchable" onclick="SmoothScroll('about');">Обо Мне<hr /></a>
                 <a class="notselectable touchable" onclick="SmoothScroll('services', 'none', 50);">Услуги<hr /></a>
-                <a class="notselectable touchable" onclick="SmoothScroll('about');">Контакты<hr /></a>
+                <a class="notselectable nottouchable" onclick="SmoothScroll('about');">Контакты<hr /></a>
             </div>
             <a class="header__phone" href="tel:+79251350866">+7 (925) 135-08-66</a>
             <div class="header__social">
@@ -112,14 +112,6 @@
                     </p>
                 </div>
             </div>
-        </div>
-
-        <div class="content__header">
-            <h2 class="notselectable">Запросы</h2>
-            <hr>
-        </div>
-
-        <div class="content">
             <div class="content__list">
                 <h3 class="notselectable">Ко мне можно обратиться со следующими запросами:</h3>
                 <ul>
@@ -173,6 +165,22 @@
                 </div>
             </div>
         </div>
+
+        <div class="content__header">
+            <h2 class="notselectable">Cтоимость</h2>
+            <hr>
+        </div>
+
+        <div class="content prices">
+            <p><b>Онлайн-консультация:</b> 2500₽</p>
+            <p><b>Личная встреча:</b> 3500₽</p>
+            <p><b>Тестирование и психодиагностика:</b> 4000₽</p>
+        </div>
+
+        <div class="container__button">
+            <div class="button touchable" onclick="location.href='https://wa.me/79251350866';"><a>ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</a></div>
+        </div>
+
         <footer>
             <a>«Мельникова Наталья» © 2023</a>
         </footer>
