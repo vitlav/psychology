@@ -115,6 +115,25 @@ li:before {
     width: 62.5vw;
 }
 
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100vw;
+    width: 10vw;
+    height: 3vw;
+    box-shadow: 0 0 10px 0 rgba(219, 189, 164, .8);
+    background-color: rgb(219, 189, 164, 0.5);
+    transition: width ease-out 0.2s, height ease-out 0.2s, background-color ease-out 0.2s
+}
+
+.button:hover {
+    width: 11vw;
+    height: 3.3vw;
+    background-color: rgb(219, 189, 164, 0.2);
+}
+
 header {
     width: 100%;
     height: 13.5vh;
@@ -263,22 +282,21 @@ header {
     margin-bottom: 10vw;
 }
 
-.about__education {
+.content__list {
     box-sizing: border-box;
     padding: 2.5vw;
 }
 
-.about__education h3 {
+.content__list h3 {
     text-align: center;
     margin-bottom: 2vw;
 }
 
-.about__education ul {
+.content__list ul {
     margin-left: 2vw;
-    margin-bottom: 4vw;
 }
 
-.about__education ul li {
+.content__list ul li {
     margin-bottom: 1.2vw;
 }
 
@@ -286,7 +304,7 @@ header {
     display: flex;
     flex-direction: column;
     height: 18.5vw;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -343,7 +361,7 @@ header {
 }
 
 .services__item {
-    height: 28vw;
+    height: 22vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -358,21 +376,15 @@ header {
     text-align: center;
 }
 
-.services__button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100vw;
-    width: 10vw;
+footer {
+    position: relative;
+    width: 100%;
     height: 3vw;
-    box-shadow: 0 0 10px 0 rgba(219, 189, 164, .8);
-    background-color: rgb(219, 189, 164, 0.5);
-    transition: width ease-out 0.2s, height ease-out 0.2s, background-color ease-out 0.2s
 }
 
-.services__button:hover {
-    width: 11vw;
-    height: 3.3vw;
-    background-color: rgb(219, 189, 164, 0.2);
+footer a {
+    opacity: 0.7;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
