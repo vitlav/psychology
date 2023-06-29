@@ -1,0 +1,96 @@
+@media (min-width: 822px) {
+    .showonmobile {
+        display: none;
+    }
+}
+
+@media (max-width: 821px) {
+    :root {
+        --text-main-size: 1.8vw;
+        --text-logo-size: 3.2vw;
+        --text-subhead-size: 4.6vw;
+    }
+
+    .hideonmobile {
+        display: none;
+    }
+
+    .container {
+        margin-top: 15vw;
+        width: 80vw;
+    }
+
+    .burger__button {
+        width: 5vw;
+        height: 5vw;
+        filter: blur(0.7px);
+        transform: rotate(0deg);
+        transition: transform ease-in-out 0.5s;
+    }
+
+    .burger__button:hover {
+        transform: rotate(-90deg);
+    }
+
+    .burger {
+        overflow: hidden;
+        z-index: 10;
+        background-color: var(--main-color);
+        border-right: 5px solid var(--text-sub-color);
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 0vw;
+        opacity: 0;
+        transition: width ease-out 0.4s, opacity ease-out 0.4s;
+    }
+
+    .burger__close {
+        position: absolute;
+        margin: 1vw;
+        right: 7.4vw;
+        top: 7.4vw;
+        width: 5vw;
+        height: 5vw;
+        filter: blur(0.7px);
+    }
+
+    .burger__links {
+        opacity: 0;
+        transition: opacity ease-out 0.2s 0.4s;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 15vw 0 0 10vw;
+    }
+
+    .burger__links a {
+        margin-bottom: 3vw;
+        font-size: var(--text-subhead-size);
+    }
+
+    header {
+        z-index: 1;
+        box-sizing: border-box;
+        padding: 0 11vw 0 3vw;
+        left: 0;
+        top: 0;
+        height: 10vw;
+        position: fixed;
+        background-color: var(--main-color);
+        border-bottom: 2px solid var(--text-sub-color);
+        box-shadow: 0 0 10px 0 rgba(219, 189, 164, .8);
+    }
+
+    .main {
+        flex-direction: column;
+        height: 65vw;
+    }
+
+    .main img {
+        width: 37.5vw;
+        height: 37.5vw;
+    }
+}

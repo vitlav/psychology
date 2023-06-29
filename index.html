@@ -10,28 +10,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="media.css" />
+
     <script src="extentions.js"></script>
 </head>
 
 <body>
-    <img src="images/background.jpg" class="background"/>
+    <img src="images/background.jpg" class="background" />
+
+    <div class="burger">
+        <img class="burger__close touchable" onclick="CloseBurger();" src="images/cross.svg" />
+        <div class="burger__links">
+            <a class="notselectable touchable" onclick="CloseBurger(); SmoothScroll('about', 'none', 100);">Обо Мне</a>
+            <a class="notselectable touchable" onclick="CloseBurger(); SmoothScroll('services', 'none', 100);">Услуги</a>
+            <a class="notselectable touchable" onclick="CloseBurger(); SmoothScroll('prices', 'none', 100);">Стоимость</a>
+        </div>
+    </div>
+
     <div class="container">
         <header>
-            <a class="header__logo notselectable" href="#">«Мельникова Наталья»</a>
-            <div class="header__links">
+            <img class="burger__button showonmobile touchable" onclick="OpenBurger();" src="images/burger.svg" />
+            <a class="header__logo notselectable">«Мельникова Наталья»</a>
+            <div class="header__links hideonmobile">
                 <a class="notselectable touchable" onclick="SmoothScroll('about');">Обо Мне<hr /></a>
                 <a class="notselectable touchable" onclick="SmoothScroll('services', 'none', 50);">Услуги<hr /></a>
                 <a class="notselectable touchable" onclick="SmoothScroll('prices', 'none', 50);">Стоимость<hr /></a>
             </div>
-            <a class="header__phone" href="tel:+79251350866">+7 (925) 135-08-66</a>
-            <div class="header__social">
+            <a class="header__phone hideonmobile" href="tel:+79251350866">+7 (925) 135-08-66</a>
+            <div class="header__social hideonmobile">
                 <a class="notselectable" href="https://wa.me/79251350866"><img alt="Whats App" src="images/logo_whatsapp.svg" /></a>
                 <a class="notselectable" href="https://t.me/avdeevantl"><img alt="Telegram" src="images/logo_telegram.svg" /></a>
             </div>
         </header>
         <div class="main">
             <img class="notselectable nottouchable" alt="Main Photo" src="images/main_photo.jpg" />
-            <hr>
+            <hr class="hideonmobile">
             <p>
                 Рада приветствовать вас на моём сайте.<br /><br />
                 Я — практикующий клинический психолог, КПТ-психотерапевт.<br /><br />
@@ -83,7 +96,7 @@
         <div class="content">
             <div class="services__grid">
                 <div class="services__item">
-                    <div class="item__image"><img src="images/service-01.svg"/></div>
+                    <div class="item__image"><img src="images/service-01.svg" /></div>
                     <h4>Помощь подросткам</h4>
                     <p>
                         Семьи, в которых есть дети подросткового возраста,
@@ -178,11 +191,11 @@
         </div>
 
         <div class="container__button">
-            <div class="button touchable" onclick="location.href='https://wa.me/79251350866';"><a>ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</a></div>
+            <div class="button touchable" onclick="location.href='https://wa.me/79251350866';"><a class="notselectable">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</a></div>
         </div>
 
         <footer>
-            <a>«Мельникова Наталья» © 2023</a>
+            <a class="notselectable">«Мельникова Наталья» © 2023</a>
         </footer>
     </div>
 </body>
