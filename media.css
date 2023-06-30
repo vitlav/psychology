@@ -1,4 +1,4 @@
-@media (min-width: 822px) {
+﻿@media (min-width: 822px) {
     .showonmobile {
         display: none;
     }
@@ -6,9 +6,21 @@
 
 @media (max-width: 821px) {
     :root {
-        --text-main-size: 1.8vw;
-        --text-logo-size: 3.2vw;
+        --text-main-size: 2.4vw;
+        --text-sub-size: 1.9vw;
+        --text-logo-size: 3.8vw;
+        --text-head-size: 5.7vw;
         --text-subhead-size: 4.6vw;
+        --text-subsubhead-size: 3vw;
+    }
+
+    .button {
+        width: 55vw;
+        height: 12vw;
+    }
+
+    li:before {
+        left: -3.2vw;
     }
 
     .hideonmobile {
@@ -17,13 +29,12 @@
 
     .container {
         margin-top: 15vw;
-        width: 80vw;
+        width: 90vw;
     }
 
     .burger__button {
         width: 5vw;
         height: 5vw;
-        filter: blur(0.7px);
         transform: rotate(0deg);
         transition: transform ease-in-out 0.5s;
     }
@@ -63,7 +74,7 @@
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
-        padding: 15vw 0 0 10vw;
+        padding: 15vw 30vw 15vw 10vw;
     }
 
     .burger__links a {
@@ -86,11 +97,66 @@
 
     .main {
         flex-direction: column;
-        height: 65vw;
+        height: 85vw;
     }
 
     .main img {
         width: 37.5vw;
         height: 37.5vw;
+    }
+
+    .content {
+        padding: 10vw;
+    }
+
+    .content__list ul li {
+        margin-bottom: 4.2vw;
+    }
+
+    .content__list h3 {
+        margin-bottom: 6vw;
+    }
+
+    .services__grid {
+        grid-template-columns: 1fr;
+        margin-bottom: 20vw;
+        gap: 10vw;
+    }
+
+    .services__item {
+        height: 50vw;
+    }
+
+    .services__item .item__image {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .about__advantage {
+        height: unset;
+    }
+
+    .advantage__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10vw;
+    }
+
+    .advantage__item {
+        width: 35vw;
+    }
+
+    .advantage__item .item__image {
+        width: 11vw;
+        height: 11vw;
+    }
+
+    .prices {
+        height: 40vw;
+    }
+
+    .container__button {
+        height: 24vw;
     }
 }

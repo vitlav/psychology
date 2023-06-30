@@ -68,6 +68,7 @@ function OpenBurger() {
     setTimeout(() => {
         document.body.style.height = "100vh";
         document.body.style.overflowY = "hidden";
+        document.getElementById("html").style.overflowY = "hidden";
     }, 400);
 }
 
@@ -79,6 +80,7 @@ function CloseBurger() {
 
     document.body.style.height = "";
     document.body.style.overflowY = "";
+    document.getElementById("html").style.overflowY = "";
 
     window.scrollBy({
         top: lastScreenPosition
