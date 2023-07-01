@@ -19,6 +19,11 @@
         height: 12vw;
     }
 
+    .button:hover {
+        width: 60.5vw;
+        height: 13.2vw;
+    }
+
     li:before {
         left: -3.2vw;
     }
