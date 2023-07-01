@@ -162,7 +162,7 @@ header {
 }
 
 .header__links {
-    width: 17.5vw;
+    width: 22.5vw;
     display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
